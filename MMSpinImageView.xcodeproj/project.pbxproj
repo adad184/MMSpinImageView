@@ -19,6 +19,18 @@
 		ED1877BD1870FCFE00F00729 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1877A51870FCFE00F00729 /* UIKit.framework */; };
 		ED1877C51870FCFE00F00729 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED1877C31870FCFE00F00729 /* InfoPlist.strings */; };
 		ED1877C71870FCFE00F00729 /* MMSpinImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1877C61870FCFE00F00729 /* MMSpinImageViewTests.m */; };
+		ED1877DC187103EB00F00729 /* libzipzap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1877D9187103E100F00729 /* libzipzap.a */; };
+		ED1877F1187105DF00F00729 /* MMSpinImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1877F0187105DF00F00729 /* MMSpinImageView.m */; };
+		ED1877F4187105EE00F00729 /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1877F3187105EE00F00729 /* MMViewController.m */; };
+		ED1877F81871095300F00729 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1877F61871095300F00729 /* libc++.dylib */; };
+		ED1877F91871095300F00729 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1877F71871095300F00729 /* libz.dylib */; };
+		ED1877FB1871095B00F00729 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1877FA1871095B00F00729 /* ImageIO.framework */; };
+		ED18780218710C8F00F00729 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1877FC18710C8F00F00729 /* 01.png */; };
+		ED18780318710C8F00F00729 /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1877FD18710C8F00F00729 /* 02.png */; };
+		ED18780418710C8F00F00729 /* 03.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1877FE18710C8F00F00729 /* 03.png */; };
+		ED18780518710C8F00F00729 /* 04.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1877FF18710C8F00F00729 /* 04.png */; };
+		ED18780618710C8F00F00729 /* 05.png in Resources */ = {isa = PBXBuildFile; fileRef = ED18780018710C8F00F00729 /* 05.png */; };
+		ED18780718710C8F00F00729 /* car.zip in Resources */ = {isa = PBXBuildFile; fileRef = ED18780118710C8F00F00729 /* car.zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +40,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = ED18779D1870FCFE00F00729;
 			remoteInfo = MMSpinImageView;
+		};
+		ED1877D6187103E100F00729 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED1877D0187103E000F00729 /* zipzap.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D899CF82162C5EC100112F49;
+			remoteInfo = "zipzap (OS X)";
+		};
+		ED1877D8187103E100F00729 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED1877D0187103E000F00729 /* zipzap.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D899CFB0162C5EEB00112F49;
+			remoteInfo = "zipzap (iOS)";
+		};
+		ED1877DA187103E100F00729 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED1877D0187103E000F00729 /* zipzap.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D899CF96162C5EC100112F49;
+			remoteInfo = zipzapTests;
+		};
+		ED1877EA1871048700F00729 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED1877D0187103E000F00729 /* zipzap.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D899CFAF162C5EEB00112F49;
+			remoteInfo = "zipzap (iOS)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,6 +88,20 @@
 		ED1877C21870FCFE00F00729 /* MMSpinImageViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMSpinImageViewTests-Info.plist"; sourceTree = "<group>"; };
 		ED1877C41870FCFE00F00729 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ED1877C61870FCFE00F00729 /* MMSpinImageViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMSpinImageViewTests.m; sourceTree = "<group>"; };
+		ED1877D0187103E000F00729 /* zipzap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = zipzap.xcodeproj; path = zipzap/zipzap.xcodeproj; sourceTree = "<group>"; };
+		ED1877EF187105DF00F00729 /* MMSpinImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSpinImageView.h; sourceTree = "<group>"; };
+		ED1877F0187105DF00F00729 /* MMSpinImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSpinImageView.m; sourceTree = "<group>"; };
+		ED1877F2187105EE00F00729 /* MMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
+		ED1877F3187105EE00F00729 /* MMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
+		ED1877F61871095300F00729 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		ED1877F71871095300F00729 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		ED1877FA1871095B00F00729 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		ED1877FC18710C8F00F00729 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 01.png; path = Resource/01.png; sourceTree = "<group>"; };
+		ED1877FD18710C8F00F00729 /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 02.png; path = Resource/02.png; sourceTree = "<group>"; };
+		ED1877FE18710C8F00F00729 /* 03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 03.png; path = Resource/03.png; sourceTree = "<group>"; };
+		ED1877FF18710C8F00F00729 /* 04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 04.png; path = Resource/04.png; sourceTree = "<group>"; };
+		ED18780018710C8F00F00729 /* 05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 05.png; path = Resource/05.png; sourceTree = "<group>"; };
+		ED18780118710C8F00F00729 /* car.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = car.zip; path = Resource/car.zip; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +109,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED1877FB1871095B00F00729 /* ImageIO.framework in Frameworks */,
+				ED1877F81871095300F00729 /* libc++.dylib in Frameworks */,
+				ED1877F91871095300F00729 /* libz.dylib in Frameworks */,
+				ED1877DC187103EB00F00729 /* libzipzap.a in Frameworks */,
 				ED1877A41870FCFE00F00729 /* CoreGraphics.framework in Frameworks */,
 				ED1877A61870FCFE00F00729 /* UIKit.framework in Frameworks */,
 				ED1877A21870FCFE00F00729 /* Foundation.framework in Frameworks */,
@@ -77,10 +135,13 @@
 		ED1877951870FCFE00F00729 = {
 			isa = PBXGroup;
 			children = (
+				ED1877F51871065500F00729 /* Resource */,
+				ED1877EE187105DF00F00729 /* Source */,
 				ED1877A71870FCFE00F00729 /* MMSpinImageView */,
 				ED1877C01870FCFE00F00729 /* MMSpinImageViewTests */,
 				ED1877A01870FCFE00F00729 /* Frameworks */,
 				ED18779F1870FCFE00F00729 /* Products */,
+				ED1877D0187103E000F00729 /* zipzap.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +157,9 @@
 		ED1877A01870FCFE00F00729 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED1877FA1871095B00F00729 /* ImageIO.framework */,
+				ED1877F61871095300F00729 /* libc++.dylib */,
+				ED1877F71871095300F00729 /* libz.dylib */,
 				ED1877A11870FCFE00F00729 /* Foundation.framework */,
 				ED1877A31870FCFE00F00729 /* CoreGraphics.framework */,
 				ED1877A51870FCFE00F00729 /* UIKit.framework */,
@@ -111,6 +175,8 @@
 				ED1877B11870FCFE00F00729 /* MMAppDelegate.m */,
 				ED1877B31870FCFE00F00729 /* Images.xcassets */,
 				ED1877A81870FCFE00F00729 /* Supporting Files */,
+				ED1877F2187105EE00F00729 /* MMViewController.h */,
+				ED1877F3187105EE00F00729 /* MMViewController.m */,
 			);
 			path = MMSpinImageView;
 			sourceTree = "<group>";
@@ -144,6 +210,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ED1877D1187103E000F00729 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED1877D7187103E100F00729 /* libzipzap.a */,
+				ED1877D9187103E100F00729 /* libzipzap.a */,
+				ED1877DB187103E100F00729 /* zipzapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED1877EE187105DF00F00729 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				ED1877EF187105DF00F00729 /* MMSpinImageView.h */,
+				ED1877F0187105DF00F00729 /* MMSpinImageView.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		ED1877F51871065500F00729 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				ED1877FC18710C8F00F00729 /* 01.png */,
+				ED1877FD18710C8F00F00729 /* 02.png */,
+				ED1877FE18710C8F00F00729 /* 03.png */,
+				ED1877FF18710C8F00F00729 /* 04.png */,
+				ED18780018710C8F00F00729 /* 05.png */,
+				ED18780118710C8F00F00729 /* car.zip */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,6 +256,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				ED1877EB1871048700F00729 /* PBXTargetDependency */,
 			);
 			name = MMSpinImageView;
 			productName = MMSpinImageView;
@@ -207,6 +306,12 @@
 			mainGroup = ED1877951870FCFE00F00729;
 			productRefGroup = ED18779F1870FCFE00F00729 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ED1877D1187103E000F00729 /* Products */;
+					ProjectRef = ED1877D0187103E000F00729 /* zipzap.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				ED18779D1870FCFE00F00729 /* MMSpinImageView */,
@@ -215,13 +320,43 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		ED1877D7187103E100F00729 /* libzipzap.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libzipzap.a;
+			remoteRef = ED1877D6187103E100F00729 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED1877D9187103E100F00729 /* libzipzap.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libzipzap.a;
+			remoteRef = ED1877D8187103E100F00729 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED1877DB187103E100F00729 /* zipzapTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = zipzapTests.xctest;
+			remoteRef = ED1877DA187103E100F00729 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		ED18779C1870FCFE00F00729 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED18780418710C8F00F00729 /* 03.png in Resources */,
+				ED18780618710C8F00F00729 /* 05.png in Resources */,
+				ED18780218710C8F00F00729 /* 01.png in Resources */,
 				ED1877AC1870FCFE00F00729 /* InfoPlist.strings in Resources */,
+				ED18780518710C8F00F00729 /* 04.png in Resources */,
 				ED1877B41870FCFE00F00729 /* Images.xcassets in Resources */,
+				ED18780718710C8F00F00729 /* car.zip in Resources */,
+				ED18780318710C8F00F00729 /* 02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +375,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED1877F1187105DF00F00729 /* MMSpinImageView.m in Sources */,
 				ED1877B21870FCFE00F00729 /* MMAppDelegate.m in Sources */,
+				ED1877F4187105EE00F00729 /* MMViewController.m in Sources */,
 				ED1877AE1870FCFE00F00729 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +397,11 @@
 			isa = PBXTargetDependency;
 			target = ED18779D1870FCFE00F00729 /* MMSpinImageView */;
 			targetProxy = ED1877BE1870FCFE00F00729 /* PBXContainerItemProxy */;
+		};
+		ED1877EB1871048700F00729 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "zipzap (iOS)";
+			targetProxy = ED1877EA1871048700F00729 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -364,8 +506,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MMSpinImageView/MMSpinImageView-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../zipzap,
+				);
 				INFOPLIST_FILE = "MMSpinImageView/MMSpinImageView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -377,8 +526,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MMSpinImageView/MMSpinImageView-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../zipzap,
+				);
 				INFOPLIST_FILE = "MMSpinImageView/MMSpinImageView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -444,6 +600,7 @@
 				ED1877CC1870FCFE00F00729 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED1877CD1870FCFE00F00729 /* Build configuration list for PBXNativeTarget "MMSpinImageViewTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +609,7 @@
 				ED1877CF1870FCFE00F00729 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

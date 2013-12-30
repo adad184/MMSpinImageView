@@ -40,7 +40,7 @@ or you can directly set the images array.
     
     @property (nonatomic, strong)   NSArray  *imagesArray;
 
-and maybe you want to load images from zip file.( this feather depend on [zipzap](https://github.com/pixelglow/zipzap), you can remove relative method if you don't nend this)
+and maybe you want to load images from zip file.( this feather depends on [zipzap](https://github.com/pixelglow/zipzap), you can remove relative methods if you don't need this)
 
     - (void)loadDataFromZip:(NSString*)path;
     

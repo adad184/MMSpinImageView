@@ -72,8 +72,7 @@
 
 - (void) actionFile
 {
-    NSLog(@"%@",[[NSBundle mainBundle].resourceURL.path stringByAppendingString:@"/car.zip"]);
-    [self.imageView loadDataFromZip:[[NSBundle mainBundle].resourceURL.path stringByAppendingString:@"/car.zip"]];
+    [self.imageView loadDataFromZip:[[NSBundle mainBundle].resourcePath stringByAppendingString:@"/car.zip"]];
 }
 
 @end

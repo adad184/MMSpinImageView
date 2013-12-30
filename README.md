@@ -1,7 +1,7 @@
 MMSpinImageView
 ===============
 
-**MMSpinImageView** is UIView to display 360 degree spin photography with simple 
+**MMSpinImageView** is UIView to display 360 degree spin photography.
 
 ![demo](https://github.com/adad184/MMSpinImageView/blob/master/Image/demo.gif?raw=true)
 
@@ -40,7 +40,7 @@ or you can directly set the images array.
     
     @property (nonatomic, strong)   NSArray  *imagesArray;
 
-and maybe you want to load images from zip file.
+and maybe you want to load images from zip file.( this feather depend on [zipzap](https://github.com/pixelglow/zipzap), you can remove relative method if you don't nend this)
 
     - (void)loadDataFromZip:(NSString*)path;
     

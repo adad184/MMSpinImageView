@@ -14,7 +14,7 @@ There's 3 ways to use **MMSpinImageView**.
 you can use datasource to provide your images.
 
 
-	@protocol HMSpinImageViewDelegate <NSObject>
+	@protocol MMSpinImageViewDelegate <NSObject>
 	
 	@optional
 	
@@ -25,7 +25,7 @@ you can use datasource to provide your images.
 	
 	@end
 	
-	@protocol HMSpinImageViewDatasource <NSObject>
+	@protocol MMSpinImageViewDatasource <NSObject>
 	
 	- (UIImage *)spinImageView:(MMSpinImageView *)view imageAtIndex:(NSInteger)index;
 	

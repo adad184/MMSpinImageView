@@ -10,8 +10,8 @@
 
 @interface MMSpinImageView()
 <
-HMSpinImageViewDelegate,
-HMSpinImageViewDatasource,
+MMSpinImageViewDelegate,
+MMSpinImageViewDatasource,
 UIGestureRecognizerDelegate
 >
 
@@ -37,10 +37,15 @@ UIGestureRecognizerDelegate
         
         _panDistance = 20;
         
-        UIPanGestureRecognizer *gesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(actionPan:)];
-        gesture.maximumNumberOfTouches = 1;
-        gesture.delegate = self;
-        [self addGestureRecognizer:gesture];
+        UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(actionPan:)];
+        panGesture.maximumNumberOfTouches = 1;
+        panGesture.delegate = self;
+        [self addGestureRecognizer:panGesture];
+        
+        
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(actionTap:)];
+        tapGesture.delegate = self;
+        [self addGestureRecognizer:tapGesture];
     }
     return self;
 }
@@ -177,7 +182,16 @@ UIGestureRecognizerDelegate
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
 {
-    return self.imageCount > 1;
+    if ( [gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]] )
+    {
+        return self.imageCount > 1;
+    }
+    
+    if ( [gestureRecognizer isKindOfClass:[UITapGestureRecognizer class]] )
+    {
+        return self.imageCount > 0;
+    }
+    return NO;
 }
 
 - (void)actionPan:(UIPanGestureRecognizer*)gesture
@@ -207,6 +221,14 @@ UIGestureRecognizerDelegate
             
         default:
             break;
+    }
+}
+
+- (void)actionTap:(UIPanGestureRecognizer*)gesture
+{
+    if ( [self.delegate respondsToSelector:@selector(spinImageView:didSelectAtIndex:)] )
+    {
+        [self.delegate spinImageView:self didSelectAtIndex:self.currentIndex];
     }
 }
 

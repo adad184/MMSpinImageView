@@ -10,7 +10,7 @@
 
 @class MMSpinImageView;
 
-@protocol HMSpinImageViewDelegate <NSObject>
+@protocol MMSpinImageViewDelegate <NSObject>
 
 @optional
 
@@ -21,7 +21,7 @@
 
 @end
 
-@protocol HMSpinImageViewDatasource <NSObject>
+@protocol MMSpinImageViewDatasource <NSObject>
 
 - (UIImage *)spinImageView:(MMSpinImageView *)view imageAtIndex:(NSInteger)index;
 
@@ -33,8 +33,8 @@
 
 @interface MMSpinImageView : UIView
 
-@property (nonatomic, weak) id<HMSpinImageViewDelegate> delegate;
-@property (nonatomic, weak) id<HMSpinImageViewDatasource> dataSource;
+@property (nonatomic, weak) id<MMSpinImageViewDelegate> delegate;
+@property (nonatomic, weak) id<MMSpinImageViewDatasource> dataSource;
 
 @property (nonatomic, readonly) UIImageView *imageView;
 

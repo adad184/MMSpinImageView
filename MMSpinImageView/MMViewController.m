@@ -10,6 +10,9 @@
 #import "MMSpinImageView.h"
 
 @interface MMViewController ()
+<
+MMSpinImageViewDelegate
+>
 
 @property (nonatomic, strong) MMSpinImageView *imageView;
 @property (nonatomic, strong) UIButton *btnMemo;
@@ -25,6 +28,7 @@
     if (self) {
         // Custom initialization
         self.imageView = [[MMSpinImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
+        self.imageView.delegate = self;
         [self.view addSubview:self.imageView];
         
         self.btnMemo = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -74,5 +78,11 @@
 {
     [self.imageView loadDataFromZip:[[NSBundle mainBundle].resourcePath stringByAppendingString:@"/car.zip"]];
 }
+
+- (void)spinImageView:(MMSpinImageView *)view didSelectAtIndex:(NSInteger)index
+{
+    NSLog(@"%d",index);
+}
+
 
 @end

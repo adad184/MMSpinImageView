@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+
+typedef NS_ENUM(NSInteger, MMSpinViewDirection) {
+    MMSpinViewDirectionForward,
+    MMSpinViewDirectionBackward,
+    MMSpinViewDirectionMax = 999
+};
+
 @class MMSpinImageView;
 
 @protocol MMSpinImageViewDelegate <NSObject>
@@ -42,8 +49,10 @@
 @property (nonatomic, readonly) UIImage  *currentImage;
 @property (nonatomic, assign)   NSInteger currentIndex;
 @property (nonatomic, assign)   double panDistance;
+@property (nonatomic, assign) MMSpinViewDirection direction;
 
 - (void)reloadData;
 - (void)loadDataFromZip:(NSString*)path;
+- (void)clear;
 
 @end

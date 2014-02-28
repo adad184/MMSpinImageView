@@ -36,15 +36,18 @@ UIGestureRecognizerDelegate
         [self addSubview:self.imageView];
         
         _panDistance = 20;
+        _direction = MMSpinViewDirectionForward;
         
         UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(actionPan:)];
         panGesture.maximumNumberOfTouches = 1;
         panGesture.delegate = self;
+        panGesture.cancelsTouchesInView = YES;
         [self addGestureRecognizer:panGesture];
         
         
         UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(actionTap:)];
         tapGesture.delegate = self;
+        tapGesture.cancelsTouchesInView = YES;
         [self addGestureRecognizer:tapGesture];
     }
     return self;
@@ -99,6 +102,18 @@ UIGestureRecognizerDelegate
         self.currentIndex = 0;
     }
     
+}
+
+- (void)clear
+{
+    self.delegate = nil;
+    self.dataSource = nil;
+    
+    self.imageView.image = nil;
+    self.imageCount = 0;
+    self.currentIndex = 0;
+    
+    self.imagesArray = nil;
 }
 
 - (void)loadDataFromZip:(NSString *)path
@@ -208,6 +223,11 @@ UIGestureRecognizerDelegate
             CGPoint pt = [gesture locationInView:self];
             
             double offset = pt.x - self.touchPoint.x;
+            
+            if ( self.direction == MMSpinViewDirectionBackward )
+            {
+                offset = -offset;
+            }
             
             NSInteger index = (int)(((offset+self.panDistance/2.0f) + (1000*self.panDistance) )/ self.panDistance) - 1000 + self.touchIndex;
             

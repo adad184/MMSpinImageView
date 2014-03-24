@@ -154,7 +154,7 @@ UIGestureRecognizerDelegate
                 continue;
             }
             
-            NSData *data = [entry newData];
+            NSData *data = [entry newDataWithError:nil];
             
             UIImage * image = [UIImage imageWithData:data scale:[UIScreen mainScreen].scale];
             
@@ -234,6 +234,12 @@ UIGestureRecognizerDelegate
             if ( index != self.currentIndex )
             {   
                 self.currentIndex = (index + self.imageCount*1000) % self.imageCount;
+                
+                
+                if ( [self.delegate respondsToSelector:@selector(spinImageView:didSpinToIndex:)] )
+                {
+                    [self.delegate spinImageView:self didSpinToIndex:index];
+                }
             }
             
             break;

@@ -21,6 +21,7 @@ typedef NS_ENUM(NSInteger, MMSpinViewDirection) {
 
 @optional
 
+- (void)spinImageView:(MMSpinImageView*)view didSpinToIndex:(NSInteger)index;
 - (void)spinImageView:(MMSpinImageView*)view didSelectAtIndex:(NSInteger)index;
 - (void)spinImageViewBeginLoadData:(MMSpinImageView*)view;
 - (void)spinImageViewEndLoadData:(MMSpinImageView*)view;

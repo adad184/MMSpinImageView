@@ -1,5 +1,8 @@
 MMSpinImageView
 ===============
+[![CocoaPods](https://img.shields.io/cocoapods/v/MMSpinImageView.svg)]()
+[![CocoaPods](https://img.shields.io/cocoapods/p/MMSpinImageView.svg)]()
+[![CocoaPods](https://img.shields.io/cocoapods/l/MMSpinImageView.svg)]()
 
 **MMSpinImageView** is UIView to display 360 degree spin photography.
 
